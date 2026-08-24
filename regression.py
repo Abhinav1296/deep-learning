@@ -32,3 +32,5 @@ model.save('boston_house_model.keras')
 m1 = keras.models.load_model('boston_house_model.keras')
 
 print(m1.predict(X_test[0].reshape(1, 13)))
+
+print("Predicted value:", m1.predict(X_test[1:10]))
